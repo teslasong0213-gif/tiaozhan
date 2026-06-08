@@ -1,0 +1,6 @@
+{
+  "name": "刘海条形码挑战",
+  "description": "一款以刘海条形码为核心创意的趣味三连挑战互动网页，包括切码、吸码和溶码三大关卡，帮助清洗今日油脂刘海，重新恢复顺滑状态！",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

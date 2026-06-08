@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "ZCOOL QingKe HuangYou", "ZCOOL KuaiLe", system-ui, sans-serif;
+  --font-comic: "ZCOOL QingKe HuangYou", "ZCOOL KuaiLe", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, 12px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Rounded, comic-thick border style range thumbs */
+input[type="range"]::-webkit-slider-thumb {
+  border: 3.5px solid #111111;
+  height: 24px;
+  width: 24px;
+  border-radius: 9999px;
+  background: #FFD93D;
+  cursor: ew-resize;
+  appearance: none;
+  box-shadow: 2px 2px 0px #111111;
+  transition: transform 0.1s;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.15);
+}
+input[type="range"]::-moz-range-thumb {
+  border: 3.5px solid #111111;
+  height: 24px;
+  width: 24px;
+  border-radius: 9999px;
+  background: #FFD93D;
+  cursor: ew-resize;
+  box-shadow: 2px 2px 0px #111111;
+}
+input[type="range"]::-moz-range-thumb:active {
+  transform: scale(1.15);
+}
+
